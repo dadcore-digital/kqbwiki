@@ -1,0 +1,57 @@
+/* Hacky Overrides of Bootstrap Theming */
+
+/*
+TODO: Make this all SASS.
+
+KQB Purple Extra Light: #c4a8e0
+KQB Purple Very Light: #a04bec
+KQB Purple Light: #8922ef
+KQB Purple Medium: #6700cf
+KQB Purple Medium: #582b7f
+KQB Purple Very Dark: #55297d
+*/
+
+
+/* Navbar */
+
+.navbar-brand {
+    color: #c4a8e0 !important;
+}
+
+.navbar-inverse {
+    background-color: #3d1d5a;
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #55297d;
+}
+
+.btn-info {
+    background-color: #6700cf;
+    border-color: transparent;
+}
+
+.btn-info:hover, .btn-info:active:hover, .btn-info.active:hover, .open>.dropdown-toggle.btn-info:hover, .btn-info:active:focus, .btn-info.active:focus, .open>.dropdown-toggle.btn-info:focus, .btn-info:active.focus, .btn-info.active.focus, .open>.dropdown-toggle.btn-info.focus {
+    color: #fff;
+    background-color: #8922ef;
+    border-color: transparent;
+}
+
+#article-container a, #article-breadcrumbs ul li a, #wiki-footer a {
+    color: #6700cf;
+}
+
+#article-container .nav-pills li.active a {
+    background-color: #582b7f;
+    color: #ffffff;
+}
+
+.btn-warning, .btn-danger {
+    color: #fff !important;
+}

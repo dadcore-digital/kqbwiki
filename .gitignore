@@ -11,3 +11,4 @@ __pycache__/
 .cache/
 debug.png
 secrets.json
+data/

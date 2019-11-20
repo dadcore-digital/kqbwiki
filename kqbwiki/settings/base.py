@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 import os
 from django.core.exceptions import ImproperlyConfigured
 
@@ -26,11 +27,11 @@ def get_secret(setting, secrets=secrets):
         error_msg = "Missing %s setting from secrets file" % setting
         raise ImproperlyConfigured(error_msg)
 
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname( __file__ )))
+TEMPLATE_DIR = str(Path(BASE_DIR).parents[1]) + '/templates'
 
 SECRET_KEY = get_secret('SECRET_KEY')
 ALLOWED_HOSTS = []
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 INSTALLED_APPS = [
@@ -50,7 +51,10 @@ INSTALLED_APPS = [
     'wiki.plugins.attachments.apps.AttachmentsConfig',
     'wiki.plugins.notifications.apps.NotificationsConfig',
     'wiki.plugins.images.apps.ImagesConfig',
+    'wiki.plugins.links.apps.LinksConfig',
+    'wiki.plugins.help.apps.HelpConfig',
     'wiki.plugins.macros.apps.MacrosConfig',
+    'wiki.plugins.globalhistory.apps.GlobalHistoryConfig',
     'kqbwiki',
     'django_extensions',
 
@@ -71,7 +75,7 @@ ROOT_URLCONF = 'kqbwiki.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATE_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

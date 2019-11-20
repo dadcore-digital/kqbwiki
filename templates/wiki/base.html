@@ -1,0 +1,22 @@
+{% extends "wiki/base_site.html" %}
+
+{% load sekizai_tags static %}
+
+{% block wiki_site_title %}Killer Queen Black Wiki{% endblock %}
+
+{% block wiki_header_branding %}
+<a class="navbar-brand" href="/">Killer Queen Black Wiki</a>
+{% endblock %}
+
+{% block wiki_header_navlinks %}
+<ul class="nav navbar-nav">
+</ul>
+{% endblock %}
+
+
+{% block wiki_body %}
+  {% addtoblock "css" %}
+    <link rel="stylesheet" href="{% static 'stylesheets/style.css' %}" />
+  {% endaddtoblock %}
+  {{ block.super }}
+{% endblock %}
