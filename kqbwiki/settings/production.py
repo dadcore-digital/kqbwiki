@@ -1,6 +1,11 @@
 from .base import *  # noqa: F403
 
-ALLOWED_HOSTS = ['killerqueenblack.wiki']
+ALLOWED_HOSTS = [
+    'killerqueenblack.wiki',
+    'kqb.pythonanywhere.com',
+    'wiki.killerqueenblack.com'
+]
+
 DEBUG = False
 
 
@@ -17,3 +22,6 @@ DATABASES = {
         }
     }
 }
+
+STATIC_ROOT = '/home/kqb/kqbwiki_static'
+MEDIA_ROOT = '/home/kqb/kqbwiki_media'
