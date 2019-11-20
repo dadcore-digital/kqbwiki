@@ -8,7 +8,7 @@ DEBUG = False
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'kqbwiki',
+        'NAME': 'kqb$kqbwiki',
         'USER': 'kqb',
         'PASSWORD': get_secret('DB_PASSWORD'),  # noqa: F405
         'HOST': 'kqb.mysql.pythonanywhere-services.com',
