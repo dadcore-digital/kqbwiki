@@ -14,8 +14,17 @@ KQB Purple Very Dark: #55297d
 
 /* Navbar */
 
+@font-face {
+    font-family: 'PirulenRg-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PirulenRg-Regular'), url('../fonts/pirulen_rg.woff') format('woff');
+}
+
 .navbar-brand {
     color: #c4a8e0 !important;
+    font-family: 'PirulenRg-Regular', sans-serif;
+    font-size: 14px;
 }
 
 .navbar-inverse {
@@ -54,4 +63,14 @@ KQB Purple Very Dark: #55297d
 
 .btn-warning, .btn-danger {
     color: #fff !important;
+}
+
+
+h1#article-title {
+    font-family: 'PirulenRg-Regular', sans-serif;
+    font-size: 2em;
+}
+
+h1#article-title a {
+    font-family: sans-serif;
 }
