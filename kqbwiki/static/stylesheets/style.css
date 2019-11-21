@@ -61,6 +61,10 @@ KQB Purple Very Dark: #55297d
     color: #ffffff;
 }
 
+#article-menu {
+    padding-bottom: 10px;
+}
+
 .btn-warning, .btn-danger {
     color: #fff !important;
 }
