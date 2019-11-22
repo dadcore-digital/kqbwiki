@@ -119,3 +119,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
+
+
+# DJango Wiki Settings
+WIKI_MARKDOWN_HTML_STYLES = [
+    'width', 'height', 'size', 'padding', 'margin', 'border'
+]
