@@ -78,3 +78,8 @@ h1#article-title {
 h1#article-title a {
     font-family: sans-serif;
 }
+
+/* Only h1 should have horizontal rule effect */
+.wiki-article h2, .wiki-article h3, .wiki-article h4, .wiki-article h5, .wiki-article h6 {
+    border-bottom: none;
+}
