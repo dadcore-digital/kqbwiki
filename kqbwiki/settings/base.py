@@ -123,5 +123,6 @@ MEDIA_URL = '/media/'
 
 # DJango Wiki Settings
 WIKI_MARKDOWN_HTML_STYLES = [
-    'width', 'height', 'size', 'padding', 'margin', 'border', 'float', 'display'
+    'width', 'height', 'size', 'padding', 'margin', 'border', 'float',
+    'display', 'max-width', 'min-width'
 ]
