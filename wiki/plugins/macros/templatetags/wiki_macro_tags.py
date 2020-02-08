@@ -14,6 +14,12 @@ def article_list(context, urlpath, depth):
     context['depth'] = depth
     return context
 
+@register.inclusion_tag(
+    'wiki/plugins/templatetags/youtube_embed.html',
+    takes_context=True
+)
+def youtube_embed(context):
+    return context
 
 @register.simple_tag
 def allowed_macros():

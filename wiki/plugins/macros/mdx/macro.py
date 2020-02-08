@@ -70,6 +70,22 @@ class MacroPattern(markdown.inlinepatterns.Pattern):
         args={'depth': _('Maximum depth to show levels for.')}
     )
 
+    def youtube_embed(self, depth="2"):
+        html = render_to_string(
+            "wiki/plugins/macros/youtube_embed.html",
+            context={
+                'article_children': self.markdown.article.get_children(
+                    article__current_revision__deleted=False),
+                'depth': int(depth) + 1,
+            })
+        return self.markdown.htmlStash.store(html, safe=True)
+    youtube_embed.meta = dict(
+        short_description=_('Youtube embed'),
+        help_text=_('Insert a youtube video embed.'),
+        example_code='[youtube depth:2]',
+        args={'depth': _('Maximum depth to show levels for.')}
+    )
+
     def toc(self):
         return "[TOC]"
     toc.meta = dict(

@@ -126,3 +126,9 @@ WIKI_MARKDOWN_HTML_STYLES = [
     'width', 'height', 'size', 'padding', 'margin', 'border', 'float',
     'display', 'max-width', 'min-width'
 ]
+
+WIKI_MARKDOWN_HTML_WHITELIST = ['iframe']
+
+WIKI_MARKDOWN_HTML_ATTRIBUTES = {
+    'iframe': ['width', 'height', 'src']
+}
