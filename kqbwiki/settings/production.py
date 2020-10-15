@@ -25,3 +25,6 @@ DATABASES = {
 
 STATIC_ROOT = '/home/kqb/kqbwiki_static'
 MEDIA_ROOT = '/home/kqb/kqbwiki_media'
+
+
+WIKI_ACCOUNT_SIGNUP_ALLOWED = False
