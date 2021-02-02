@@ -1,5 +1,5 @@
 2to3==1.0
-bleach==2.1.4
+bleach==3.3.0
 Django==2.1.14
 django-classy-tags==0.9.0
 django-extensions==2.2.5
