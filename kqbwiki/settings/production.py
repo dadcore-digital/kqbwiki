@@ -13,10 +13,10 @@ DEBUG = False
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'kqb$kqbwiki',
-        'USER': 'kqb',
+        'NAME': 'kqbwiki',
+        'USER': 'kqbwiki',
         'PASSWORD': get_secret('DB_PASSWORD'),  # noqa: F405
-        'HOST': 'kqb.mysql.pythonanywhere-services.com',
+        'HOST': '',
         'OPTIONS': {
                 'init_command': 'SET storage_engine=INNODB'
         }
