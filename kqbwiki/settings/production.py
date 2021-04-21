@@ -23,8 +23,8 @@ DATABASES = {
     }
 }
 
-STATIC_ROOT = '/home/kqb/kqbwiki_static'
-MEDIA_ROOT = '/home/kqb/kqbwiki_media'
+STATIC_ROOT = '/home/ianfitzpatrick/apps/kqbwiki_static'
+MEDIA_ROOT = '/home/ianfitzpatrick/apps/kqbwiki_media'
 
 
 WIKI_ACCOUNT_SIGNUP_ALLOWED = False
