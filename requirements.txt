@@ -17,4 +17,4 @@ sorl-thumbnail==12.5.0
 sqlparse==0.3.0
 webencodings==0.5.1
 Werkzeug==0.16.0
-wiki==0.4.5
+wiki==0.7.9
