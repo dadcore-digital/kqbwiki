@@ -10,7 +10,7 @@ django-sekizai==1.0.0
 html5lib==1.0.1
 Markdown==2.6.11
 mysqlclient==1.4.5
-Pillow==6.2.1
+Pillow==9.0.1
 pytz==2019.3
 six==1.13.0
 sorl-thumbnail==12.5.0
